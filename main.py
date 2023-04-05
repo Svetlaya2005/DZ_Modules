@@ -1,11 +1,7 @@
-import salary
-import people
+from calculation.salary import calculate_salary
+from DB.people import get_employees
 
-print("Хорошего дня, пользователь!")
-for t in reversed(range(3)):
-    password = int(input("Введите пароль:"))
-    if password == 123:
-        print('Пароль верный, вход выполнен')
-        break
-    print('Неправильный пароль, осталось попыток :', t)
+if __name__ == 'main':
+    a = calculate_salary()
+    b = get_employees()
 

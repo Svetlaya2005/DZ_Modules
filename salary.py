@@ -1,9 +1,7 @@
-print('Расчет заработной платы')
-def calculate_salary(self):
+def calculate_salary():
+    print('Расчет заработной платы')
     a = int(input('Введите ежедневный оклад: '))
-    d = int(input('Введите количество отработанных дней): '))
-    n = 0.87
-    s = a * d * n
-    return(print(s))
-
-
+    d = int(input('Введите количество отработанных дней: '))
+    s = a * d / 100 * 87
+    print(s)
+calculate_salary()
